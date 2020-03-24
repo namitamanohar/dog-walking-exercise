@@ -48,7 +48,7 @@ ON w.DogId = d.Id
 WHERE w.[date] <'03/19/2020' and w.[date] >'03/12/2020'
 
 SELECT d.[name] AS 'Dog Name'
-FROM Dog d 
+FROM Dog d --has foreign key on it 
 LEFT JOIN Walks w 
 ON w.DogId = d.Id
 GROUP BY d.[name]
